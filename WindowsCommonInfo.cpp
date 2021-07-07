@@ -109,99 +109,192 @@ string WindowsCommonInfo::GetPlatformName() {
 				Result += " ";
 
 				switch (ProductType) {
-				case PRODUCT_BUSINESS:							Result += "Business"; break;
-				case PRODUCT_BUSINESS_N:						Result += "Business N"; break;
-				case PRODUCT_CLUSTER_SERVER:					Result += "HPC Edition"; break;
-				case PRODUCT_CLUSTER_SERVER_V:					Result += "Server Hyper Core V"; break;
-				case PRODUCT_CORE:								Result += "Home"; break;
-				case PRODUCT_CORE_COUNTRYSPECIFIC:				Result += "Home China"; break;
-				case PRODUCT_CORE_N:							Result += "Home N"; break;
-				case PRODUCT_CORE_SINGLELANGUAGE:				Result += "Home Single Language"; break;
-				case PRODUCT_DATACENTER_EVALUATION_SERVER:		Result += "Server Datacenter(evaluation installation)"; break;
-				case PRODUCT_DATACENTER_SERVER:					Result += "Server Datacenter(full installation)"; break;
-				case PRODUCT_DATACENTER_SERVER_CORE:			Result += "Server Datacenter(core installation)"; break;
-				case PRODUCT_DATACENTER_SERVER_CORE_V:			Result += "Server Datacenter without Hyper - V(core installation)"; break;
-				case PRODUCT_DATACENTER_SERVER_V:				Result += "Server Datacenter without Hyper - V(full installation)"; break;
-				case PRODUCT_EDUCATION:							Result += "Education"; break;
-				case PRODUCT_EDUCATION_N:						Result += "Education N"; break;
-				case PRODUCT_ENTERPRISE:						Result += "Enterprise"; break;
-				case PRODUCT_ENTERPRISE_E:						Result += "Enterprise E"; break;
-				case PRODUCT_ENTERPRISE_EVALUATION:				Result += "Enterprise Evaluation"; break;
-				case PRODUCT_ENTERPRISE_N:						Result += "Enterprise N"; break;
-				case PRODUCT_ENTERPRISE_N_EVALUATION:			Result += "Enterprise N Evaluation"; break;
-				case PRODUCT_ENTERPRISE_S:						Result += "Enterprise 2015 LTSB"; break;
-				case PRODUCT_ENTERPRISE_S_EVALUATION:			Result += "Enterprise 2015 LTSB Evaluation"; break;
-				case PRODUCT_ENTERPRISE_S_N:					Result += "Enterprise 2015 LTSB N"; break;
-				case PRODUCT_ENTERPRISE_S_N_EVALUATION:			Result += "Enterprise 2015 LTSB N Evaluation"; break;
-				case PRODUCT_ENTERPRISE_SERVER:					Result += "Server Enterprise(full installation)"; break;
-				case PRODUCT_ENTERPRISE_SERVER_CORE:			Result += "Server Enterprise(core installation)"; break;
-				case PRODUCT_ENTERPRISE_SERVER_CORE_V:			Result += "Server Enterprise without Hyper - V(core installation)"; break;
-				case PRODUCT_ENTERPRISE_SERVER_IA64:			Result += "Server Enterprise for Itanium - based Systems"; break;
-				case PRODUCT_ENTERPRISE_SERVER_V:				Result += "Server Enterprise without Hyper - V(full installation)"; break;
-				case PRODUCT_ESSENTIALBUSINESS_SERVER_ADDL:		Result += "Windows Essential Server Solution Additional"; break;
-				case PRODUCT_ESSENTIALBUSINESS_SERVER_ADDLSVC:	Result += "Windows Essential Server Solution Additional SVC"; break;
-				case PRODUCT_ESSENTIALBUSINESS_SERVER_MGMT:		Result += "Windows Essential Server Solution Management"; break;
-				case PRODUCT_ESSENTIALBUSINESS_SERVER_MGMTSVC:	Result += "Windows Essential Server Solution Management SVC"; break;
-				case PRODUCT_HOME_BASIC:						Result += "Home Basic"; break;
-				case PRODUCT_HOME_BASIC_E:						Result += "Not supported (Home Basic E)"; break;
-				case PRODUCT_HOME_BASIC_N:						Result += "Home Basic N"; break;
-				case PRODUCT_HOME_PREMIUM:						Result += "Home Premium"; break;
-				case PRODUCT_HOME_PREMIUM_E:					Result += "Not supported (Home Premium E)"; break;
-				case PRODUCT_HOME_PREMIUM_N:					Result += "Home Premium N"; break;
-				case PRODUCT_HOME_PREMIUM_SERVER:				Result += "Windows Home Server 2011"; break;
-				case PRODUCT_HOME_SERVER:						Result += "Windows Storage Server 2008 R2 Essentials"; break;
-				case PRODUCT_HYPERV:							Result += "Microsoft Hyper - V Server"; break;
-				case PRODUCT_IOTUAP:							Result += "IoT Core"; break;
-				//case PRODUCT_IOTUAPCOMMERCIAL:				Result += "IoT Core Commercial"; break;
-				case PRODUCT_MEDIUMBUSINESS_SERVER_MANAGEMENT:	Result += "Windows Essential Business Server Management Server"; break;
-				case PRODUCT_MEDIUMBUSINESS_SERVER_MESSAGING:	Result += "Windows Essential Business Server Messaging Server"; break;
-				case PRODUCT_MEDIUMBUSINESS_SERVER_SECURITY:	Result += "Windows Essential Business Server Security Server"; break;
-				//case PRODUCT_MOBILE_CORE:						Result += "Mobile"; break;
-				//case PRODUCT_MOBILE_ENTERPRISE:				Result += "Mobile Enterprise"; break;
-				case PRODUCT_MULTIPOINT_PREMIUM_SERVER:			Result += "Windows MultiPoint Server Premium(full installation)"; break;
-				case PRODUCT_MULTIPOINT_STANDARD_SERVER:		Result += "Windows MultiPoint Server Standard(full installation)"; break;
-				case PRODUCT_PROFESSIONAL:						Result += "Pro"; break;
-				case PRODUCT_PROFESSIONAL_E:					Result += "Not supported (Pro E)"; break;
-				case PRODUCT_PROFESSIONAL_N:					Result += "Pro N"; break;
-				case PRODUCT_PROFESSIONAL_WMC:					Result += "Professional with Media Center"; break;
-				case PRODUCT_SB_SOLUTION_SERVER:				Result += "Windows Small Business Server 2011 Essentials"; break;
-				case PRODUCT_SB_SOLUTION_SERVER_EM:				Result += "Server For SB Solutions EM"; break;
-				case PRODUCT_SERVER_FOR_SB_SOLUTIONS:			Result += "Server For SB Solutions"; break;
-				case PRODUCT_SERVER_FOR_SB_SOLUTIONS_EM:		Result += "Server For SB Solutions EM"; break;
-				case PRODUCT_SERVER_FOR_SMALLBUSINESS:			Result += "Windows Server 2008 for Windows Essential Server Solutions"; break;
-				case PRODUCT_SERVER_FOR_SMALLBUSINESS_V:		Result += "Windows Server 2008 without Hyper - V for Windows Essential Server Solutions"; break;
-				case PRODUCT_SERVER_FOUNDATION:					Result += "Server Foundation"; break;
-				case PRODUCT_SMALLBUSINESS_SERVER:				Result += "Windows Small Business Server"; break;
-				case PRODUCT_SMALLBUSINESS_SERVER_PREMIUM:		Result += "Small Business Server Premium"; break;
-				case PRODUCT_SMALLBUSINESS_SERVER_PREMIUM_CORE:	Result += "Small Business Server Premium(core installation)"; break;
-				case PRODUCT_SOLUTION_EMBEDDEDSERVER:			Result += "Windows MultiPoint Server"; break;
-				case PRODUCT_STANDARD_EVALUATION_SERVER:		Result += "Server Standard(evaluation installation)"; break;
-				case PRODUCT_STANDARD_SERVER:					Result += "Server Standard"; break;
-				case PRODUCT_STANDARD_SERVER_CORE:				Result += "Server Standard(core installation)"; break;
-				case PRODUCT_STANDARD_SERVER_CORE_V:			Result += "Server Standard without Hyper - V(core installation)"; break;
-				case PRODUCT_STANDARD_SERVER_V:					Result += "Server Standard without Hyper - V"; break;
-				case PRODUCT_STANDARD_SERVER_SOLUTIONS:			Result += "Server Solutions Premium"; break;
-				case PRODUCT_STANDARD_SERVER_SOLUTIONS_CORE:	Result += "Server Solutions Premium(core installation)"; break;
-				case PRODUCT_STARTER:							Result += "Starter"; break;
-				case PRODUCT_STARTER_E:							Result += "Not supported (Starter E)"; break;
-				case PRODUCT_STARTER_N:							Result += "Starter N"; break;
-				case PRODUCT_STORAGE_ENTERPRISE_SERVER:			Result += "Storage Server Enterprise"; break;
-				case PRODUCT_STORAGE_ENTERPRISE_SERVER_CORE:	Result += "Storage Server Enterprise(core installation)"; break;
-				case PRODUCT_STORAGE_EXPRESS_SERVER:			Result += "Storage Server Express"; break;
-				case PRODUCT_STORAGE_EXPRESS_SERVER_CORE:		Result += "Storage Server Express(core installation)"; break;
-				case PRODUCT_STORAGE_STANDARD_EVALUATION_SERVER:Result += "Storage Server Standard(evaluation installation)"; break;
-				case PRODUCT_STORAGE_STANDARD_SERVER:			Result += "Storage Server Standard"; break;
-				case PRODUCT_STORAGE_STANDARD_SERVER_CORE:		Result += "Storage Server Standard(core installation)"; break;
-				case PRODUCT_STORAGE_WORKGROUP_EVALUATION_SERVER:Result += "Storage Server Workgroup(evaluation installation)"; break;
-				case PRODUCT_STORAGE_WORKGROUP_SERVER:			Result += "Storage Server Workgroup"; break;
-				case PRODUCT_STORAGE_WORKGROUP_SERVER_CORE:		Result += "Storage Server Workgroup(core installation)"; break;
-				case PRODUCT_ULTIMATE:							Result += "Ultimate"; break;
-				case PRODUCT_ULTIMATE_E:						Result += "Not supported (Ultimate E)"; break;
-				case PRODUCT_ULTIMATE_N:						Result += "Ultimate N"; break;
-				case PRODUCT_UNDEFINED:							Result += "An unknown product"; break;
-				case PRODUCT_WEB_SERVER:						Result += "Web Server(full installation)"; break;
-				case PRODUCT_WEB_SERVER_CORE:					Result += "Web Server(core installation)"; break;
-				default:										Result += "Unknown product type"; break;
+				case PRODUCT_BUSINESS:							
+					Result += "Business"; break;
+				case PRODUCT_BUSINESS_N:						
+					Result += "Business N"; break;
+				case PRODUCT_CLUSTER_SERVER:					
+					Result += "HPC Edition"; break;
+				case PRODUCT_CLUSTER_SERVER_V:					
+					Result += "Server Hyper Core V"; break;
+				case PRODUCT_CORE:								
+					Result += "Home"; break;
+				case PRODUCT_CORE_COUNTRYSPECIFIC:				
+					Result += "Home China"; break;
+				case PRODUCT_CORE_N:							
+					Result += "Home N"; break;
+				case PRODUCT_CORE_SINGLELANGUAGE:				
+					Result += "Home Single Language"; break;
+				case PRODUCT_DATACENTER_EVALUATION_SERVER:		
+					Result += "Server Datacenter(evaluation installation)"; break;
+				case PRODUCT_DATACENTER_SERVER:					
+					Result += "Server Datacenter(full installation)"; break;
+				case PRODUCT_DATACENTER_SERVER_CORE:			
+					Result += "Server Datacenter(core installation)"; break;
+				case PRODUCT_DATACENTER_SERVER_CORE_V:			
+					Result += "Server Datacenter without Hyper - V(core installation)"; break;
+				case PRODUCT_DATACENTER_SERVER_V:				
+					Result += "Server Datacenter without Hyper - V(full installation)"; break;
+				case PRODUCT_EDUCATION:							
+					Result += "Education"; break;
+				case PRODUCT_EDUCATION_N:						
+					Result += "Education N"; break;
+				case PRODUCT_ENTERPRISE:						
+					Result += "Enterprise"; break;
+				case PRODUCT_ENTERPRISE_E:						
+					Result += "Enterprise E"; break;
+				case PRODUCT_ENTERPRISE_EVALUATION:				
+					Result += "Enterprise Evaluation"; break;
+				case PRODUCT_ENTERPRISE_N:						
+					Result += "Enterprise N"; break;
+				case PRODUCT_ENTERPRISE_N_EVALUATION:			
+					Result += "Enterprise N Evaluation"; break;
+				case PRODUCT_ENTERPRISE_S:						
+					Result += "Enterprise 2015 LTSB"; break;
+				case PRODUCT_ENTERPRISE_S_EVALUATION:			
+					Result += "Enterprise 2015 LTSB Evaluation"; break;
+				case PRODUCT_ENTERPRISE_S_N:					
+					Result += "Enterprise 2015 LTSB N"; break;
+				case PRODUCT_ENTERPRISE_S_N_EVALUATION:			
+					Result += "Enterprise 2015 LTSB N Evaluation"; break;
+				case PRODUCT_ENTERPRISE_SERVER:					
+					Result += "Server Enterprise(full installation)"; break;
+				case PRODUCT_ENTERPRISE_SERVER_CORE:			
+					Result += "Server Enterprise(core installation)"; break;
+				case PRODUCT_ENTERPRISE_SERVER_CORE_V:			
+					Result += "Server Enterprise without Hyper - V(core installation)"; break;
+				case PRODUCT_ENTERPRISE_SERVER_IA64:			
+					Result += "Server Enterprise for Itanium - based Systems"; break;
+				case PRODUCT_ENTERPRISE_SERVER_V:				
+					Result += "Server Enterprise without Hyper - V(full installation)"; break;
+				case PRODUCT_ESSENTIALBUSINESS_SERVER_ADDL:		
+					Result += "Windows Essential Server Solution Additional"; break;
+				case PRODUCT_ESSENTIALBUSINESS_SERVER_ADDLSVC:	
+					Result += "Windows Essential Server Solution Additional SVC"; break;
+				case PRODUCT_ESSENTIALBUSINESS_SERVER_MGMT:		
+					Result += "Windows Essential Server Solution Management"; break;
+				case PRODUCT_ESSENTIALBUSINESS_SERVER_MGMTSVC:	
+					Result += "Windows Essential Server Solution Management SVC"; break;
+				case PRODUCT_HOME_BASIC:						
+					Result += "Home Basic"; break;
+				case PRODUCT_HOME_BASIC_E:						
+					Result += "Not supported (Home Basic E)"; break;
+				case PRODUCT_HOME_BASIC_N:						
+					Result += "Home Basic N"; break;
+				case PRODUCT_HOME_PREMIUM:						
+					Result += "Home Premium"; break;
+				case PRODUCT_HOME_PREMIUM_E:					
+					Result += "Not supported (Home Premium E)"; break;
+				case PRODUCT_HOME_PREMIUM_N:					
+					Result += "Home Premium N"; break;
+				case PRODUCT_HOME_PREMIUM_SERVER:				
+					Result += "Windows Home Server 2011"; break;
+				case PRODUCT_HOME_SERVER:						
+					Result += "Windows Storage Server 2008 R2 Essentials"; break;
+				case PRODUCT_HYPERV:							
+					Result += "Microsoft Hyper - V Server"; break;
+				case PRODUCT_IOTUAP:							
+					Result += "IoT Core"; break;
+				//case PRODUCT_IOTUAPCOMMERCIAL:				
+					//Result += "IoT Core Commercial"; break;
+				case PRODUCT_MEDIUMBUSINESS_SERVER_MANAGEMENT:	
+					Result += "Windows Essential Business Server Management Server"; break;
+				case PRODUCT_MEDIUMBUSINESS_SERVER_MESSAGING:	
+					Result += "Windows Essential Business Server Messaging Server"; break;
+				case PRODUCT_MEDIUMBUSINESS_SERVER_SECURITY:	
+					Result += "Windows Essential Business Server Security Server"; break;
+				//case PRODUCT_MOBILE_CORE:						
+					//Result += "Mobile"; break;
+				//case PRODUCT_MOBILE_ENTERPRISE:				
+					//Result += "Mobile Enterprise"; break;
+				case PRODUCT_MULTIPOINT_PREMIUM_SERVER:			
+					Result += "Windows MultiPoint Server Premium(full installation)"; break;
+				case PRODUCT_MULTIPOINT_STANDARD_SERVER:		
+					Result += "Windows MultiPoint Server Standard(full installation)"; break;
+				case PRODUCT_PROFESSIONAL:						
+					Result += "Pro"; break;
+				case PRODUCT_PROFESSIONAL_E:					
+					Result += "Not supported (Pro E)"; break;
+				case PRODUCT_PROFESSIONAL_N:					
+					Result += "Pro N"; break;
+				case PRODUCT_PROFESSIONAL_WMC:					
+					Result += "Professional with Media Center"; break;
+				case PRODUCT_SB_SOLUTION_SERVER:				
+					Result += "Windows Small Business Server 2011 Essentials"; break;
+				case PRODUCT_SB_SOLUTION_SERVER_EM:				
+					Result += "Server For SB Solutions EM"; break;
+				case PRODUCT_SERVER_FOR_SB_SOLUTIONS:			
+					Result += "Server For SB Solutions"; break;
+				case PRODUCT_SERVER_FOR_SB_SOLUTIONS_EM:		
+					Result += "Server For SB Solutions EM"; break;
+				case PRODUCT_SERVER_FOR_SMALLBUSINESS:			
+					Result += "Windows Server 2008 for Windows Essential Server Solutions"; break;
+				case PRODUCT_SERVER_FOR_SMALLBUSINESS_V:		
+					Result += "Windows Server 2008 without Hyper - V for Windows Essential Server Solutions"; break;
+				case PRODUCT_SERVER_FOUNDATION:					
+					Result += "Server Foundation"; break;
+				case PRODUCT_SMALLBUSINESS_SERVER:				
+					Result += "Windows Small Business Server"; break;
+				case PRODUCT_SMALLBUSINESS_SERVER_PREMIUM:		
+					Result += "Small Business Server Premium"; break;
+				case PRODUCT_SMALLBUSINESS_SERVER_PREMIUM_CORE:
+					Result += "Small Business Server Premium(core installation)"; break;
+				case PRODUCT_SOLUTION_EMBEDDEDSERVER:			
+					Result += "Windows MultiPoint Server"; break;
+				case PRODUCT_STANDARD_EVALUATION_SERVER:		
+					Result += "Server Standard(evaluation installation)"; break;
+				case PRODUCT_STANDARD_SERVER:					
+					Result += "Server Standard"; break;
+				case PRODUCT_STANDARD_SERVER_CORE:				
+					Result += "Server Standard(core installation)"; break;
+				case PRODUCT_STANDARD_SERVER_CORE_V:			
+					Result += "Server Standard without Hyper - V(core installation)"; break;
+				case PRODUCT_STANDARD_SERVER_V:					
+					Result += "Server Standard without Hyper - V"; break;
+				case PRODUCT_STANDARD_SERVER_SOLUTIONS:			
+					Result += "Server Solutions Premium"; break;
+				case PRODUCT_STANDARD_SERVER_SOLUTIONS_CORE:	
+					Result += "Server Solutions Premium(core installation)"; break;
+				case PRODUCT_STARTER:							
+					Result += "Starter"; break;
+				case PRODUCT_STARTER_E:							
+					Result += "Not supported (Starter E)"; break;
+				case PRODUCT_STARTER_N:							
+					Result += "Starter N"; break;
+				case PRODUCT_STORAGE_ENTERPRISE_SERVER:			
+					Result += "Storage Server Enterprise"; break;
+				case PRODUCT_STORAGE_ENTERPRISE_SERVER_CORE:	
+					Result += "Storage Server Enterprise(core installation)"; break;
+				case PRODUCT_STORAGE_EXPRESS_SERVER:			
+					Result += "Storage Server Express"; break;
+				case PRODUCT_STORAGE_EXPRESS_SERVER_CORE:		
+					Result += "Storage Server Express(core installation)"; break;
+				case PRODUCT_STORAGE_STANDARD_EVALUATION_SERVER:
+					Result += "Storage Server Standard(evaluation installation)"; break;
+				case PRODUCT_STORAGE_STANDARD_SERVER:			
+					Result += "Storage Server Standard"; break;
+				case PRODUCT_STORAGE_STANDARD_SERVER_CORE:		
+					Result += "Storage Server Standard(core installation)"; break;
+				case PRODUCT_STORAGE_WORKGROUP_EVALUATION_SERVER:
+					Result += "Storage Server Workgroup(evaluation installation)"; break;
+				case PRODUCT_STORAGE_WORKGROUP_SERVER:			
+					Result += "Storage Server Workgroup"; break;
+				case PRODUCT_STORAGE_WORKGROUP_SERVER_CORE:		
+					Result += "Storage Server Workgroup(core installation)"; break;
+				case PRODUCT_ULTIMATE:							
+					Result += "Ultimate"; break;
+				case PRODUCT_ULTIMATE_E:						
+					Result += "Not supported (Ultimate E)"; break;
+				case PRODUCT_ULTIMATE_N:						
+					Result += "Ultimate N"; break;
+				case PRODUCT_UNDEFINED:							
+					Result += "An unknown product"; break;
+				case PRODUCT_WEB_SERVER:						
+					Result += "Web Server(full installation)"; break;
+				case PRODUCT_WEB_SERVER_CORE:					
+					Result += "Web Server(core installation)"; break;
+				default:										
+					Result += "Unknown product type"; break;
 				}
 			}
 		}
