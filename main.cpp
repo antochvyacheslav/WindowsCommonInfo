@@ -4,8 +4,7 @@
 
 #include "WindowsCommonInfo.h"
 
-int main()
-{
+int main() {
 	WindowsCommonInfo::TraceInfo();
 	return 0;
 }
